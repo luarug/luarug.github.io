@@ -1,0 +1,41 @@
+@font-face
+{
+  font-family: TTCommons-ExtraLight;
+  src: url("../fonts/TT\ Commons\ ExtraLight.otf");
+}
+
+@font-face
+{
+  font-family: TTCommons-ExtraLight-Italic;
+  src: url("../fonts/TT\ Commons\ ExtraLight\ Italic.otf");
+}
+
+@font-face
+{
+  font-family: TTCommons-Light;
+  src: url("../fonts/TT\ Commons\ Regular.otf");
+}
+
+@font-face
+{
+  font-family: TTCommons-Regular;
+  src: url("../fonts/TT\ Commons\ Regular.otf");
+}
+
+@font-face
+{
+  font-family: TTCommons-Medium;
+  src: url("../fonts/TT\ Commons\ Medium.otf");
+}
+
+@font-face
+{
+  font-family: TTCommons-Medium-Italic;
+  src: url("../fonts/TT\ Commons\ Medium\ Italic.otf");
+}
+
+@font-face
+{
+  font-family: TTCommons-Bold;
+  src: url("../fonts/TT\ Commons\ Bold.otf");
+}

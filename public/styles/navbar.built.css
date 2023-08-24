@@ -1,0 +1,350 @@
+/* MOBILE NAVBAR STARTS */
+
+.mobile-globalnav
+{
+    display: none;
+}
+
+.mobile-globalnav_fixed
+{
+    display: none;
+}
+
+/* MOBILE NAVBAR ENDS */
+
+.globalnav
+{
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.none_globalnav
+{
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.globalnav_fixed
+{
+    z-index: 1000;
+    background: #fafafacc;
+    backdrop-filter: blur(125px);
+    -webkit-backdrop-filter: blur(125px);
+    -moz-backdrop-filter: blur(125px);
+    -o-backdrop-filter: blur(125px);
+    -ms-backdrop-filter: blur(125px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.globalnavbar_fixedblock
+{
+    height: 55px;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.globalnav-content 
+{
+    width: 100%;
+    height: 100%;
+}
+
+.globalnav-list
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.globalnav-item-flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%
+}
+
+.globalnav-link-cta
+{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-right: 1px solid #e9e9e9;
+}
+
+.globalnav-link-cta:nth-last-child(1)
+{
+    border-right: 0px;
+    padding-right: 0rem;
+}
+
+.globalnav-link
+{
+    color: #111111;
+    font-size: 17px;
+    opacity: 0.7;
+    transition: opacity 400ms;
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    -ms-transition: opacity 400ms;
+    -o-transition: opacity 400ms;
+}
+
+.globalnav-link:hover
+{
+    opacity: 1;
+}
+
+.globalnav-logo-icon
+{
+    width: 110px;
+    height: 30px;
+    background: url('../resources/images/icons/luar-logo-black.svg');
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.globalnav-logo-icon-color
+{
+    width: 110px;
+    height: 30px;
+    background: url('../resources/images/icons/luar-logo.svg');
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* MOBILE NAVBAR STARTS */
+
+.mobile-globalnav
+{
+    display: none;
+}
+
+/* MOBILE NAVBAR ENDS */
+
+@media screen and (max-width: 770px) 
+{
+    /* MOBILE NAVBAR STARTS */
+
+    .mobile-globalnav
+    {
+        width: 100%;
+        height: 60px;
+        z-index: 1000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        transition: 0.6s;
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -ms-transition: 0.6s;
+        -o-transition: 0.6s;
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    .mobile-globalnav_fixed
+    {
+        z-index: 1000;
+        background: #fafafacc;
+        backdrop-filter: blur(125px);
+        -webkit-backdrop-filter: blur(125px);
+        -moz-backdrop-filter: blur(125px);
+        -o-backdrop-filter: blur(125px);
+        -ms-backdrop-filter: blur(125px);
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        transition: 0.6s;
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -ms-transition: 0.6s;
+        -o-transition: 0.6s;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        display: block;
+    }
+
+    .none_mobile_globalnav
+    {
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .mobile_globalnavbar_fixedblock
+    {
+        height: 55px;
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .mobile-nav-icon
+    {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transition: .1s;
+        margin: 3px 3px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .mobile-nav-icon span
+    {
+        width: 5px;
+        height: 5px;
+        background-color: #696A6C;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .mobile-nav-icon:hover span
+    {
+        transform: scale(1.2);
+        transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
+    }
+
+    .mobile-nav-icon span:nth-child(1)
+    {
+        left: 0;
+        top: 0;
+    }
+
+    .mobile-nav-icon span:nth-child(2)
+    {
+        left: 12px;
+        top: 0;
+    }
+
+    .mobile-nav-icon span:nth-child(3)
+    {
+        right: 0;
+        top: 0;
+    }
+
+    .mobile-nav-icon span:nth-child(4)
+    {
+        left: 0;
+        top: 12px;
+    }
+    
+    .mobile-nav-icon span:nth-child(5)
+    {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+    }
+
+    .mobile-nav-icon span:nth-child(6)
+    {
+        right: 0px;
+        top: 12px;
+    }
+
+    .mobile-nav-icon span:nth-child(7)
+    {
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .mobile-nav-icon span:nth-child(8)
+    {
+        position: absolute;
+        left: 12px;
+        bottom: 0px;
+    }
+
+    .mobile-nav-icon span:nth-child(9)
+    {
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .mobile-nav-icon.open-menu-mobilenavbar
+    {
+        transform: rotate(180deg);
+        cursor: pointer;
+        transition: .2s cubic-bezier(.8, .5, .2, 1.4);
+    }
+
+    .mobile-nav-icon.open-menu-mobilenavbar span
+    {
+        border-radius: 50%;
+        transition-delay: 200ms;
+        transition: .5s cubic-bezier(.8, .5, .2, 1.4);
+    }
+
+    .mobile-nav-icon.open-menu-mobilenavbar span:nth-child(2) 
+    {
+        left: 6px;
+        top: 6px;
+    }
+    
+    .mobile-nav-icon.open-menu-mobilenavbar span:nth-child(4) 
+    {
+        left: 6px;
+        top: 18px;
+    }
+
+    .mobile-nav-icon.open-menu-mobilenavbar span:nth-child(6) 
+    {
+        right: 6px;
+        top: 6px;
+    }
+
+    .mobile-nav-icon.open-menu-mobilenavbar span:nth-child(8) 
+    {
+        left: 18px;
+        bottom: 6px;
+    }
+
+    /* MOBILE NAVBAR ENDS */
+
+    .globalnav
+    {
+        display: none;
+    }
+
+    .globalnav_fixed
+    {
+        display: none;
+    }
+
+}
