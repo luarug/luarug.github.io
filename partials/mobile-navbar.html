@@ -25,39 +25,43 @@
             </div>
         </div>
     </nav>
-    <nav id="mobile-globalnav_fixedid" class="mobile-globalnav_fixed" lang="es-MX">
-        <div class="container">
-            <div class="globalnav-content">
-                <ul class="globalnav-list" role="none">
-                    <li class="globalnav-item globalnav-item-luar">
-                        <a href="/" class="globalnav-menuback-button">
-                            <span class="globalnav-logo-icon-color"></span>
+    <div class="globalnav-menu">
+        <ul class="globalnav-menu-list">
+            <div class="container">
+                <li class="globalnav-menu-item">
+                    <div class="globalnav-menu-cta">
+                        <a href="#design" class="globalnav-menu-link">
+                            Design
                         </a>
-                    </li>
-                    <li class="globalnav-item">
-                        <div class="icon-mobile-navbar mobile-nav-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </li>
+                <li class="globalnav-menu-item">
+                    <div class="globalnav-menu-cta">
+                        <a href="/projects" class="globalnav-menu-link">
+                            Projects
+                        </a>
+                    </div>
+                </li>
+                <li class="globalnav-menu-item">
+                    <div class="globalnav-menu-cta">
+                        <a href="/about" class="globalnav-menu-link">
+                            About
+                        </a>
+                    </div>
+                </li>
             </div>
-        </div>
-    </nav>
+        </ul>
+    </div>
 </div>
 
 <script>
-    const navIcons = document.querySelectorAll('.icon-mobile-navbar');
-    navIcons.forEach (navIcon => {  
+    const navIcon = document.querySelector('.icon-mobile-navbar');
+    const globalnavMenu = document.querySelector('.globalnav-menu');
+    const bodyPage = document.querySelector('.body-page-class');
+
     navIcon.addEventListener('click', (event) => {
         navIcon.classList.toggle("open-menu-mobilenavbar");
-    });
+        globalnavMenu.classList.toggle("open-globalnav-menu");
+        bodyPage.classList.toggle("body-globalnav-menu");
     });
 </script>
