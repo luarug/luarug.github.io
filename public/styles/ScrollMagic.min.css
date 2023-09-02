@@ -1,0 +1,22 @@
+#text_reveal_1 {
+    opacity: 1;
+    -webkit-transform: scale(1);
+         -moz-transform: scale(1);
+            -ms-transform: scale(1);
+             -o-transform: scale(1);
+                    transform: scale(1);
+    -webkit-transition: all 1.4s ease-in-out;
+         -moz-transition: all 1.4s ease-in-out;
+            -ms-transition: all 1.4s ease-in-out;
+             -o-transition: all 1.4s ease-in-out;
+                    transition: all 1.4s ease-in-out;
+}
+#text_reveal_1.visible-reveal-text1 {
+    opacity: 1;
+    -webkit-transform: none;
+         -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                    transform: none;
+}
+
