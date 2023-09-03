@@ -58,16 +58,16 @@
                                 Beyond the design
                             </h3>
                         </div>
-                        <div class="superlargeTitle margin-top-10">
+                        <div class="superlargeTitle margin-top-5">
                             <h2 class="font-bold">Luis Armando Rubí</h2>
                             <h3 class="title2 font-regular margin-top-5">
                                 Product Developer & UI/UX Designer
                             </h3>
                         </div>
-                        <div class="superlargeTitle font-bold margin-top-10">
+                        <div class="superlargeTitle font-bold margin-top-5">
                             Consulting and design to companies and individuals to obtain better results on their websites and apps on multiple devices (Mobile, TV, Tablets, etc.)
                         </div>
-                        <div class="superlargeTitle font-bold margin-top-10">
+                        <div class="superlargeTitle font-bold margin-top-5">
                             Applying design and business methodologies looking to create better design experiences for users, or ideate, prototype and launch a product (MVP) without spending a lot of time and money.
                         </div>
                         
@@ -158,7 +158,7 @@
             });
         </script>
 
-        <section class="hero hero-design-tools">
+        <!--<section class="hero hero-design-tools">
             <div class="container">
                 
             </div>
@@ -166,11 +166,38 @@
 
         <script>
             
-        </script>
+        </script>-->
 
-        <section class="hero hero-design">
-            <div class="container">
+        <section class="hero hero-design design-section">
+            <div class="hero-panel panel-above">
+                <div class="container">
 
+                </div>
+            </div>
+            <div class="hero-panel panel-shopclips">
+                <div class="container">
+                    
+                </div>
+            </div>
+            <div class="hero-panel panel-diplomatic-relations-usamex">
+                <div class="container">
+                    
+                </div>
+            </div>
+            <div class="hero-panel panel-winter-youth-games">
+                <div class="container">
+                    
+                </div>
+            </div>
+            <div class="hero-panel panel-maktub">
+                <div class="container">
+                    
+                </div>
+            </div>
+            <div class="hero-panel panel-diplomatic-relations-bramex">
+                <div class="container">
+                    
+                </div>
             </div>
         </section>
 
@@ -184,7 +211,7 @@
                 });
 
                 // get all slides
-                var slides = document.querySelectorAll("section.panel");
+                var slides = document.querySelectorAll("div.hero-panel");
 
                 // create scene for every slide
                 for (var i=0; i<slides.length; i++) {
@@ -192,7 +219,6 @@
                             triggerElement: slides[i]
                         })
                         .setPin(slides[i], {pushFollowers: false})
-                        .addIndicators() // add indicators (requires plugin)
                         .addTo(controller);
                 }
             });
